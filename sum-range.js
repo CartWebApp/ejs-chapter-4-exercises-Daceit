@@ -1,9 +1,28 @@
 function range(start, end, step = 1) {
   // Add code.
+  let bird = []
+  if (start < end) {
+    for (let x = start; x <= end; x++) {
+      bird.push(x)
+    }
+  } else if(start > end) {
+    for (let i = start; i >= end; i = i -1) {
+      bird.push(i)
+    }
+  } else {
+    bird.push(step)
+  }
+  return bird
 }
+console.log(range(901,1000))
 
 function sum(numbers) {
   // Add code.
+  result = 0
+  for (const a of numbers){
+    result = a + result
+  }
+  return result
 }
 
 

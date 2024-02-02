@@ -1,5 +1,8 @@
 function reverseArray(arr) {
   // Add code.
+  return reverseArray(arr.pop)
+
+ 
 }
 
 function reverseArrayInPlace(arr) {
