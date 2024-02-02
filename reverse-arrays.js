@@ -1,6 +1,11 @@
 function reverseArray(arr) {
-  // Add code.
-  return reverseArray(arr.pop)
+  let newArr = [];
+  ["A", "B", "C"]
+  for(arrItem of arr){
+    newArr.push(arrItem)
+  }
+  const removed = arr.pop
+  console.log (removed)
 
  
 }
