@@ -1,17 +1,17 @@
 function reverseArray(arr) {
   let newArr = [];
-  ["A", "B", "C"]
-  for(arrItem of arr){
-    newArr.push(arrItem)
+  for ( a of arr) {
+  newArr.unshift(a)
   }
-  const removed = arr.pop
-  console.log (removed)
-
+  return newArr
  
 }
 
 function reverseArrayInPlace(arr) {
   // Add code.
+  for (let x = 0; x < arr.length; x++) {
+    arr.shift()
+  }
 }
 
 
