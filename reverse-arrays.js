@@ -9,9 +9,17 @@ function reverseArray(arr) {
 
 function reverseArrayInPlace(arr) {
   // Add code.
-  for (let x = 0; x < arr.length; x++) {
-    arr.shift()
+  const length = arr.length;
+  let n = 0
+  for (let x = 0; x < length; x++){
+    arr.unshift(``);
   }
+  for(properties of arr){
+    arr[n]=arr[arr.length -1];
+    arr.pop();
+    n++;
+  }
+  return arr;
 }
 
 
